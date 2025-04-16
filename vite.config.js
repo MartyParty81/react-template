@@ -15,9 +15,13 @@ export default defineConfig({
       }
     },
     chunkSizeWarningLimit: 1600,
+    cssCodeSplit: false,
   },
   server: {
     port: 3000,
     host: true
+  },
+  css: {
+    postcss: './postcss.config.js',
   }
 })
