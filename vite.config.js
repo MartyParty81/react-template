@@ -8,6 +8,12 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true,
     minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true
+      }
+    },
     chunkSizeWarningLimit: 1600,
   },
   server: {
